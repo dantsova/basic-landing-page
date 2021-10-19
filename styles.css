@@ -139,10 +139,6 @@ div{
     flex-grow: 1;
 }
 img{
-    min-height: 488.7px;
-    min-width: 716.4px;
-    left: 759px;
-    top: 221px;
     justify-content: center;
     align-items: center;
 }
@@ -163,8 +159,12 @@ img{
     color: #0A1B32;
 }
 
+span{
+    color:#33A2E0;
+}
+
 .header{
-    padding: 30px 80px 10px 80px;
+    padding: 30px 67px 10px 80px;
     max-width: 100%;
     display: flex;
     flex-wrap: nowrap;
