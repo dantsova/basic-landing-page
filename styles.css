@@ -58,14 +58,24 @@ div{
 
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #9A9A9A;
+    transition: 0.7s;
+}
+
 .main-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-grow: 50;
     margin-top: 2%;
-    margin-left: 22%;
-    margin-right: 12%;
+    margin-left: 25%;
+    margin-right: 16%;
 }
 
 .content{
@@ -104,10 +114,12 @@ div{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-end;
+
 }
 .log-buttons{
     width: 120px;
     height: 59.65px;
+    margin-left: 1px;
 }
 #learn-more-button{
     width: 152px;
@@ -175,7 +187,7 @@ span{
 }
 
 .header{
-    padding: 30px 67px 10px 80px;
+    padding: 30px 65px 10px 80px;
     max-width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -183,12 +195,43 @@ span{
     flex-grow: 0;
 }
 
-#footer{
+#footer {
     height: 10%;
     background: transparent;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
     color: transparent;
-;
+}
+
+.no-active-buttons:hover {
+    background: #33A2E0;
+    border-radius: 6px;
+    border-color: transparent;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+.no-active-buttons:hover ~ #sign-up {
+    background: transparent;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #1B0A42;
 }
