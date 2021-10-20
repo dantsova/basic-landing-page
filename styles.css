@@ -35,7 +35,7 @@ div{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 5em;
+    margin-left: 55%;
 }
 
 .nav-items{
@@ -43,10 +43,9 @@ div{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 150%;
-
-    min-width: 80px;
+    padding: 0 9% 0 9%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,9 +88,9 @@ a:hover {
     font-family: Ramaraja;
     font-style: normal;
     font-weight: normal;
-    font-size: 72px;
+    font-size: 450%;
     line-height: 106%;
-    margin: 0 0 0.2em 0;
+    margin: 0 0 1% 0;
 
     letter-spacing: 0.02em;
 
@@ -102,11 +101,11 @@ a:hover {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 125%;
     line-height: 160%;
     letter-spacing: 0.02em;
     color: #9A9A9A;
-    margin: 0 0 2.5em 0;
+    margin: 0 0 8% 0;
     text-align: left;
 }
 .buttons{
@@ -119,7 +118,7 @@ a:hover {
 .log-buttons{
     width: 120px;
     height: 59.65px;
-    margin-left: 1px;
+    margin-left: 2%;
 }
 #learn-more-button{
     width: 152px;
@@ -133,7 +132,7 @@ a:hover {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 150%;
 
     text-align: center;
@@ -149,7 +148,7 @@ a:hover {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 150%;
 
     text-align: center;
@@ -157,24 +156,23 @@ a:hover {
 
     color: #1B0A42;
 }
-#image{
+#image {
     display: flex;
     flex-grow: 1;
+    flex-shrink: 2;
 }
 img{
     justify-content: center;
     align-items: center;
 }
 #logo{
-    width: 95.25px;
-    height: 40.61px;
-    left: 80px;
-    top: 37px;
+    left: 20%;
+    top: 15%;
 
     font-family: Circular Std;
     font-style: normal;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 187.5%;
     line-height: 160%;
 
     letter-spacing: -0.02em;
@@ -187,12 +185,14 @@ span{
 }
 
 .header{
-    padding: 30px 65px 10px 80px;
+    /*padding: 30px 65px 10px 80px;*/
+    padding: 2.2% 5% 2% 5%;
     max-width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-grow: 0;
+    flex-shrink: 1;
 }
 
 #footer {
@@ -212,7 +212,7 @@ span{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 150%;
 
     text-align: center;
@@ -227,11 +227,43 @@ span{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 100%;
     line-height: 150%;
 
     text-align: center;
     letter-spacing: 0.02em;
 
     color: #1B0A42;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) and (orientation : portrait){
+    .header {
+        margin-left: 0%;
+    }
+    .menu{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .nav{
+        margin-left: 0%;
+        justify-content: space-between;
+    }
+    .nav-items{
+        justify-content: space-between;
+        text-align: left;
+        margin-left: 0%;
+    }
+    .main-content{
+        flex-direction: column;
+        margin-left: 9%;
+        justify-content: left;
+    }
+    #content{
+        margin-bottom: 5%;
+    }
+    #learn-more-button{
+        margin: 0 0 5% 0;
+    }
 }
