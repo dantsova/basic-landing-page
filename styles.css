@@ -119,10 +119,12 @@ a:hover {
     width: 120px;
     height: 59.65px;
     margin-left: 2%;
+    cursor: pointer;
 }
 #learn-more-button{
     width: 152px;
     height: 63.82px;
+    cursor: pointer;
 }
 .active-buttons{
     background: #33A2E0;
@@ -207,38 +209,11 @@ span{
 }
 
 .no-active-buttons:hover {
-    background: #33A2E0;
+    background: #cbd6ee;
     border-radius: 6px;
     border-color: transparent;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 100%;
-    line-height: 150%;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    color: #FFFFFF;
 }
-.no-active-buttons:hover ~ #sign-up {
-    background: transparent;
-    border: none;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 100%;
-    line-height: 150%;
-
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    color: #1B0A42;
-}
-
-
 
 @media screen and (min-width: 320px) and (max-width: 1024px) and (orientation : portrait){
     .header {
