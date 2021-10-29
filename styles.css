@@ -187,7 +187,7 @@ span{
     color:#33A2E0;
 }
 
-.header{
+header{
     /*padding: 30px 65px 10px 80px;*/
     padding: 2.2% 5% 2% 5%;
     max-width: 100%;
@@ -198,7 +198,7 @@ span{
     flex-shrink: 1;
 }
 
-#footer {
+footer {
     height: 10%;
     background: transparent;
     flex-grow: 0;
@@ -216,7 +216,7 @@ span{
 
 
 @media screen  and (max-width: 1300px){
-    .header {
+    header {
         margin-left: 0%;
     }
     .menu{
@@ -224,12 +224,7 @@ span{
         justify-content: left;
     }
     .nav-items{
-        width:100%;
         justify-content: flex-start;
-    }
-    .nav a:hover {
-        background-color: #ddd;
-        color: black;
     }
     .main-content{
         flex-direction: column;
@@ -258,15 +253,25 @@ span{
     .nav a.icon {
         display: flex;
     }
+    .nav a.nav-items:hover{
+        background: #cbd6ee;
+    }
     .hidden{
         display: none;
     }
-    .nav.responsive {position: relative;}
+    .nav.responsive {
+        position: relative;
+    }
     .nav.responsive a {
-        background: #9A9A9A;
+        background: #33A2E0;
         float: none;
         display: flex;
         text-align: left;
+        padding: 0 1000% 0 9%;
+    }
+    #image{
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 
