@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="header">
@@ -17,16 +18,19 @@
         <div id="logo">
             Medi<span>.</span>
         </div>
-        <div class="nav">
-            <div class="nav-items"><a href="#">Home</a></div>
-            <div class="nav-items"><a href="#">About</a></div>
-            <div class="nav-items"><a href="#">Blog</a></div>
-            <div class="nav-items"><a href="#">Contact</a></div>
+        <div class="nav" id="nav">
+            <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
+                <i class="fa fa-bars"></i>
+            <a class="nav-items" href="#">Home</a>
+            <a class="nav-items" href="#">About</a>
+            <a class="nav-items" href="#">Blog</a>
+            <a class="nav-items" href="#">Contact</a>
+            </a>
         </div>
     </div>
     <div class="buttons">
-        <button class="log-buttons no-active-buttons" id="sign-in">Sign In</button>
-        <button class="log-buttons active-buttons" id="sign-up">Sign Up</button>
+        <button class="log-buttons no-active-buttons">Sign In</button>
+        <button class="log-buttons active-buttons">Sign Up</button>
     </div>
 </div>
 <div class="main-content">
@@ -43,5 +47,28 @@
     </div>
 </div>
 <div id="footer">© 2021 Yana Dantsova</div>
+
+
+<script>
+    function burgerFunction() {
+        let x = document.getElementById("nav");
+        let logButtons = document.getElementsByClassName("log-buttons");
+        if (x.className === "nav") {
+            x.className += " responsive";
+            for(let element of logButtons){
+                element.className += " hidden";
+            }
+        } else {
+            for(let element of logButtons){
+                if(element.className == "log-buttons active-buttons hidden") {
+                    element.className = "log-buttons active-buttons";
+                }   else if(element.className == "log-buttons no-active-buttons hidden") {
+                    element.className = "log-buttons no-active-buttons";
+                }
+            }
+            x.className = "nav";
+        }
+    }
+</script>
 </body>
 </html>

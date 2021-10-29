@@ -29,7 +29,6 @@ body{
 div{
     display: flex;
 }
-
 .nav{
     display: flex;
     flex-wrap: nowrap;
@@ -37,7 +36,6 @@ div{
     justify-content: space-around;
     margin-left: 55%;
 }
-
 .nav-items{
     height: 50px;
     font-family: Roboto;
@@ -54,18 +52,19 @@ div{
     letter-spacing: 0.02em;
 
     color: #1B0A42;
-
-}
-
-a{
     text-decoration: none;
-    color: black;
 }
 
-a:hover {
+
+.nav a:hover {
     color: #9A9A9A;
     transition: 0.7s;
 }
+
+.nav .icon {
+    display: none;
+}
+
 
 .main-content {
     display: flex;
@@ -215,7 +214,8 @@ span{
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) and (orientation : portrait){
+
+@media screen  and (max-width: 1300px){
     .header {
         margin-left: 0%;
     }
@@ -223,14 +223,13 @@ span{
         flex-direction: column;
         justify-content: left;
     }
-    .nav{
-        margin-left: 0%;
-        justify-content: space-between;
-    }
     .nav-items{
-        justify-content: space-between;
-        text-align: left;
-        margin-left: 0%;
+        width:100%;
+        justify-content: flex-start;
+    }
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
     }
     .main-content{
         flex-direction: column;
@@ -243,8 +242,31 @@ span{
     #learn-more-button{
         margin: 0 0 5% 0;
     }
+    .nav{
+        background: transparent; /* Цвет фона */
+        filter: alpha(Opacity=70); /* Прозрачность в IE */
+        color: #fff; /* Цвет текста */
+        margin-left: 0%;
+        justify-content: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+        display: flex;
+    }
+    .hidden{
+        display: none;
+    }
+    .nav.responsive {position: relative;}
+    .nav.responsive a {
+        background: #9A9A9A;
+        float: none;
+        display: flex;
+        text-align: left;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) and (orientation : portrait){
-
-}
